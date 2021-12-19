@@ -59,10 +59,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: { id: node.id },
     })
   })
-  createRedirect({
-    fromPath: `/`,
-    toPath: `/getting-started/introduction/`,
-    redirectInBrowser: true,
-    isPermanent: true,
-  })
+  // createRedirect({
+  //   fromPath: `/`,
+  //   toPath: `/getting-started/introduction/`,
+  //   redirectInBrowser: true,
+  //   isPermanent: true,
+  // })
 }

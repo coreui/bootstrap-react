@@ -1,47 +1,103 @@
 import React, { FC } from 'react'
+import { Link } from 'gatsby'
 
-import { CContainer, CFooter } from '@coreui/react/src/index'
+import { CCol, CContainer, CImage, CRow } from '@coreui/bootstrap-react/src/index'
+import logo from './../assets/images/brand/bootstrap-react.svg'
 import pkg from './../../package.json'
 
 const Footer: FC = () => {
   return (
-    <CFooter className="docs-footer p-3 p-md-5 mt-5 text-center text-sm-start">
-      <CContainer>
-        <ul className="docs-footer-links ps-0 mb-3">
-          <li className="d-inline-block">
-            <a href="https://github.com/coreui">GitHub</a>
-          </li>
-          <li className="d-inline-block ms-3">
-            <a href="https://twitter.com/core_ui">Twitter</a>
-          </li>
-          <li className="d-inline-block ms-3 ps-3 border-start border-2">
-            <a href="https://coreui.io/">CoreUI (Vanilla)</a>
-          </li>
-          <li className="d-inline-block ms-3">
-            <a href="https://coreui.io/angular/">CoreUI for Angular</a>
-          </li>
-          <li className="d-inline-block ms-3">
-            <a href="https://coreui.io/vue/">CoreUI for Vue.js</a>
-          </li>
-        </ul>
-        <p className="mb-0">CoreUI for React is Open Source UI Components Library for React.js.</p>
-        <p className="mb-0">
-          Currently v{pkg.version}. Code licensed{' '}
-          <a
-            href="https://github.com/coreui/coreui/blob/main/LICENSE"
-            target="_blank"
-            rel="noreferrer"
-          >
-            MIT
-          </a>
-          , docs{' '}
-          <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noreferrer">
-            CC BY 3.0
-          </a>
-          .
-        </p>
+    <footer className="brd-footer py-5 mt-5 bg-light">
+      <CContainer className="py-5">
+        <CRow>
+          <CCol className="mb-3" lg={3}>
+            <Link
+              className="d-inline-flex align-items-center mb-2 link-dark text-decoration-none"
+              to="/"
+            >
+              <CImage className="d-block" src={logo} height={40} />
+            </Link>
+            <ul className="list-unstyled small text-muted">
+              <li className="mb-2">
+                Designed and built with all the love in the world by the{' '}
+                <a href="https://coreui.io">CoreUI team</a> with the help of{' '}
+                <a href="https://github.com/coreui/bootstrap-react/graphs/contributors">
+                  our contributors
+                </a>
+                .
+              </li>
+              <li className="mb-2">
+                Code licensed{' '}
+                <a
+                  href="https://github.com/coreui/bootstrap-react/blob/main/LICENSE"
+                  target="_blank"
+                  rel="license noopener"
+                >
+                  MIT
+                </a>
+                , docs{' '}
+                <a
+                  href="https://creativecommons.org/licenses/by/3.0/"
+                  target="_blank"
+                  rel="license noopener"
+                >
+                  CC BY 3.0
+                </a>
+                .
+              </li>
+              <li className="mb-2">Currently v{pkg.version}.</li>
+            </ul>
+          </CCol>
+          <CCol className="mb-3" xs={6} lg={{ span: 2, offset: 1 }}>
+            <h5>Links</h5>
+            <ul className="list-unstyled">
+              <li className="mb-2">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="mb-2">
+                <Link to="/getting-started/introduction">Docs</Link>
+              </li>
+              <li className="mb-2">
+                <a href="https://coreui.io/react/">Themes</a>
+              </li>
+              <li className="mb-2">
+                <a href="https://blog.coreui.io/">Blog</a>
+              </li>
+            </ul>
+          </CCol>
+          <CCol className="mb-3" xs={6} lg={2}>
+            <h5>Projects</h5>
+            <ul className="list-unstyled">
+              <li className="mb-2">
+                <a href="https://github.com/coreui/bootstrap-react">Bootstrap 5</a>
+              </li>
+              <li className="mb-2">
+                <a href="https://github.com/coreui/react/">CoreUI for React.js</a>
+              </li>
+              <li className="mb-2">
+                <a href="https://github.com/coreui/coreui-free-react-admin-template/">
+                  CoreUI React Admin Template
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="https://github.com/coreui/coreui-icons">CoreUI Icons</a>
+              </li>
+            </ul>
+          </CCol>
+          <CCol className="mb-3" xs={6} lg={2}>
+            <h5>Community</h5>
+            <ul className="list-unstyled">
+              <li className="mb-2">
+                <a href="https://github.com/coreui/bootstrap-react/issues">Issues</a>
+              </li>
+              <li className="mb-2">
+                <a href="https://github.com/coreui/bootstrap-react/discussions">Discussions</a>
+              </li>
+            </ul>
+          </CCol>
+        </CRow>
       </CContainer>
-    </CFooter>
+    </footer>
   )
 }
 

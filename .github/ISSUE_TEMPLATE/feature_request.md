@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for a new feature in CoreUI.
+about: Suggest an idea for a new feature in Bootstrap React.
 title: ''
 labels: feature
 assignees: ''
@@ -9,8 +9,8 @@ assignees: ''
 
 Before opening:
 
-- [Search for duplicate or closed issues](https://github.com/coreui/coreui-react/issues?utf8=%E2%9C%93&q=is%3Aissue)
-- Read the [contributing guidelines](https://github.com/coreui/coreui-react/blob/main/.github/CONTRIBUTING.md)
+- [Search for duplicate or closed issues](https://github.com/coreui/bootstrap-react/issues?utf8=%E2%9C%93&q=is%3Aissue)
+- Read the [contributing guidelines](https://github.com/coreui/bootstrap-react/blob/main/.github/CONTRIBUTING.md)
 
 Feature requests must include:
 

@@ -3,15 +3,16 @@ const pkg = require(`./package.json`)
 
 module.exports = {
   siteMetadata: {
-    title: `CoreUI for React.js`,
-    titleTemplate: `%s · React UI Components · CoreUI `,
-    description: `CoreUI for React.js is UI Component library written in TypeScript, and ready for your next React.js project.`,
+    title: `Bootstrap React`,
+    titleTemplate: `%s · Bootstrap React`,
+    description: `Bootstrap React is Bootstrap 5 UI Component library written in TypeScript, and ready for your next React.js project.`,
     author: `@coreui_io`,
-    url: `https://coreui.io/react/docs/${pkg.config.version_short}/`,
-    siteUrl: `https://coreui.io/react/docs/${pkg.config.version_short}/`,
+    url: `https://coreui.io/bootstrap-react/`,
+    siteUrl: `https://coreui.io/bootstrap-react/`,
     image: ``, // Path to your image you placed in the `static` folder
     twitterUsername: `@coreui_io`,
   },
+  pathPrefix: `bootstrap-react/`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -28,9 +29,9 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `${__dirname}/src/assets/images/brand/icon.png`,
-        name: `CoreUI for React.js`,
-        short_name: `CoreUI for React.js`,
-        start_url: `https://coreui.io/react/`,
+        name: `Bootstrap React`,
+        short_name: `Bootstrap React`,
+        start_url: `https://coreui.io/bootstrap-react/`,
         background_color: `#fff`,
         theme_color: `#321fdb`,
         display: `standalone`,
@@ -79,7 +80,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/sitemap-react.xml`,
+        excludes: [
+          '/api/*', // you can also pass valid RegExp to exclude internal tags for example
+        ],
       },
     },
     {

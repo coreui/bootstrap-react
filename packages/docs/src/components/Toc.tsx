@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import PropTypes from 'prop-types'
-import { CNav } from '@coreui/react/src/index'
+import { CNav } from '@coreui/bootstrap-react/src/index'
 
 const Toc: FC = (props) => {
   const { items } = props

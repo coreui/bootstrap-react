@@ -4,13 +4,11 @@
     "packages/*"
   ],
   "scripts": {
-    "charts:build": "lerna run --scope \"@coreui/react-chartjs\" build --stream",
-    "docs:api": "lerna run --scope \"@coreui/react-docs\" api --stream",
-    "docs:dev": "lerna run --scope \"@coreui/react-docs\" develop --stream",
-    "docs:build": "lerna run --scope \"@coreui/react-docs\" build --stream",
-    "docs:clean": "lerna run --scope \"@coreui/react-docs\" clean",
-    "icons:build": "lerna run --scope \"@coreui/icons-react\" build --stream",
-    "lib:build": "lerna run --scope \"@coreui/react\" build --stream",
+    "docs:api": "lerna run --scope \"@coreui/bootstrap-react-docs\" api --stream",
+    "docs:dev": "lerna run --scope \"@coreui/bootstrap-react-docs\" develop --stream",
+    "docs:build": "lerna run --scope \"@coreui/bootstrap-react-docs\" build --stream",
+    "docs:clean": "lerna run --scope \"@coreui/bootstrap-react-docs\" clean",
+    "lib:build": "lerna run --scope \"@coreui/bootstrap-react\" build --stream",
     "lint": "eslint \"packages/**/src/**/*.{js,ts,tsx}\"",
     "test": "jest --coverage",
     "test:update": "jest --coverage --updateSnapshot"

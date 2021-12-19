@@ -1,6 +1,6 @@
-# Contributing to CoreUI
+# Contributing to Bootstrap React
 
-Looking to contribute something to CoreUI? **Here's how you can help.**
+Looking to contribute something to Bootstrap React? **Here's how you can help.**
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
 
@@ -9,7 +9,7 @@ patches and features.
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/coreui/coreui-react/issues) is
+The [issue tracker](https://github.com/coreui/bootstrap-react/issues) is
 the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests)
 and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
@@ -93,7 +93,7 @@ included in the project:
    # Navigate to the newly cloned directory
    cd coreui
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/coreui/coreui-react.git
+   git remote add upstream https://github.com/coreui/bootstrap-react.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
